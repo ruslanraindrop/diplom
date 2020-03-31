@@ -1,0 +1,361 @@
+@font-face {
+    font-family: Open Sans;
+    src: url("../fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Open Sans;
+    src: url("../fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
+}
+
+.container-wrapper {
+    background-image: url("../images/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+}
+
+.container-wrapper::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.surface_logo_text {
+    z-index: 2;
+    position: relative;
+    width: 9.8vw;
+    height: 3vw;
+    padding-top: 2.3vw;
+}
+
+.header_text {
+    width: 79.7vw;
+    font-size: 4.6vw;
+    text-transform: uppercase;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15.2vw;
+    box-sizing: border-box;
+}
+
+.left_words {
+    text-align: left;
+    line-height: 34%;
+}
+
+.right_words {
+    margin-top: 1.8vw;
+    text-align: right;
+    line-height: 110%;
+}
+
+.header_buttons {
+    margin-top: 11vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 35vw;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5.7vw;
+    box-sizing: border-box;
+}
+
+.social_button {
+    width: 16vw;
+    height: 4vw;
+    border-radius: 50px;
+    text-align: left;
+    background-color: #5e42b0;
+}
+
+.button_link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo_apple {
+    width: 2.4vw;
+    height: 2.8vw;
+    padding-left: 1.8vw;
+    padding-right: 1.3vw;
+}
+
+.logo_google {
+    width: 2.2vw;
+    height: 2.6vw;
+    padding-left: 2.8vw;
+    padding-right: 1.3vw;
+}
+
+.button_text {
+    color: #ffffff;
+    font-size: 0.7vw;
+    line-height: 100%;
+    font-family: Open Sans, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.button_description {
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.button_description_media {
+    font-weight: bold;
+}
+
+@media (min-width:641px) and (max-width:959px) {
+    .container-wrapper {
+     background-image: url("../images/football_1280.jpg");
+    }
+
+    .surface_logo_text {
+        width: 26vw;
+        height: 7.4vw;
+        padding-top: 4.9vw;
+    }
+
+    .header_text {
+        width: 77.2vw;
+        font-size: 8.3vw;
+        margin-top: 23.5vw;
+    }
+
+    .left_words {
+        line-height: 31%;
+    }
+
+    .right_words {
+        margin-top: 3.6vw;
+        padding-left: 12.5vw;
+        text-align: left;
+    }
+
+    .header_buttons {
+        margin-top: 40.7vw;
+        width: 83.9vw;
+        padding-bottom: 11.8vw;
+    }
+
+    .social_button {
+        width: 40vw;
+        height: 10vw;
+    }
+
+    .logo_apple {
+        width: 4.9vw;
+        height: 5.8vw;
+        padding-left: 5.4vw;
+        padding-right: 3.6vw;
+    }
+
+    .logo_google {
+        width: 4.6vw;
+        height: 5.8vw;
+        padding-left: 7.8vw;
+        padding-right: 3vw;
+    }
+
+    .button_text {
+        font-size: 1.8vw;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container-wrapper {
+        background-image: url("../images/football_767.jpg");
+        background-size: cover;
+    }
+
+    .surface_logo_text {
+        width: 42vw;
+        height: 12.5vw;
+        padding-top: 10vw;
+    }
+
+    .header_text {
+        width: 79.6vw;
+        font-size: 8.7vw;
+        margin-top: 44vw;
+        margin-left: 6.2vw;
+    }
+
+    .left_words {
+        line-height: 31%;
+    }
+
+    .right_words {
+        margin-top: 8.4vw;
+        padding-left: 14vw;
+        text-align: left;
+    }
+
+    .header_buttons {
+        margin-top: 27.8vw;
+        display: block;
+        margin-left: 6.2vw;
+        padding-bottom: 25.9vw;
+    }
+
+    .social_button {
+        width: 87.5vw;
+        height: 11vw;
+        justify-content: center;
+    }
+
+    .social_button:nth-child(2n) {
+        margin-top: 4.6vw;
+    }
+
+    .logo_apple {
+        width: 6vw;
+        height: 7.5vw;
+        padding-left: 25.3vw;
+        padding-right: 2.3vw;
+
+    }
+
+    .logo_google {
+        width: 7.5vw;
+        height: 5.8vw;
+        padding-left: 25.3vw;
+        padding-right: 1vw;
+
+    }
+
+    .button_text {
+        font-size: 2.5vw;
+        margin-bottom: 2px;
+    }
+}
+
+.odd_list {
+    position: relative;
+}
+
+.odd_image {
+    width: 52.3vw;
+}
+
+.athlets_image {
+    position: absolute;
+    margin-left: 20.3vw;
+    z-index: 2;
+    width: 30vw;
+    margin-top: -4vw;
+}
+
+
+.odd_header {
+    margin-bottom: 2.5vw;
+    padding-left: 52.3vw;
+    margin-top: 5.8vw;
+}
+
+.odd_title {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4.2vw;
+    line-height: 60%;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.odd_item {
+    padding-left: 52.3vw;
+    padding-right: 10.4vw;
+}
+
+.odd_item:nth-child(3n+2) {
+    background-color: #f6f4fa;
+}
+
+.odd_item:nth-child(3n+3) {
+    background-color: #5e42b0;
+}
+
+.header_odd_item {
+    display: flex;
+    padding-top: 3vw;
+    align-items: flex-start;
+}
+
+.number_odd_item, .number_odd_item_another {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #000000;
+    margin-right: 0.6vw;
+    position: relative;
+}
+
+.number_odd_item::after {
+    content: "";
+    width: 0.8vw;
+    height: 0.15vw;
+    background-color: #5e42b0;
+    position: absolute;
+    display: block;
+    margin-left: 0.1vw;
+}
+
+.number_odd_item_another::after {
+    background-color: #ffffff;
+    content: "";
+    width: 0.8vw;
+    height: 0.15vw;
+    position: absolute;
+    display: block;
+    margin-left: 0.1vw;
+}
+
+.title_odd_item {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.9vw;
+    line-height: 1.7vw;
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.text_odd_item, .text_odd_item_another {
+    margin-top: 0.9vw;
+    padding-bottom: 3vw;
+    color: #000000;
+    font-size: 1vw;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.text_odd_item_another {
+    color: #ffffff;
+}
